@@ -12,6 +12,117 @@
   h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
   a { text-decoration: none; color: inherit; }
 </style>
+
+<style>
+/* Mobile Responsive Overrides */
+@media (max-width: 768px) {
+  /* Navigation */
+  nav { padding: 12px 16px !important; }
+  nav ul, nav > div > ul { display: none !important; }
+  nav > div, nav { flex-wrap: wrap; gap: 8px !important; }
+  
+  /* Hero */
+  section:first-of-type, [style*="min-height:600"], [style*="min-height: 600"] {
+    min-height: 400px !important;
+  }
+  section:first-of-type h1, [style*="font-size:clamp"] {
+    font-size: clamp(28px, 7vw, 48px) !important;
+  }
+  [style*="padding:140px"], [style*="padding: 140px"] {
+    padding: 80px 20px !important;
+  }
+  
+  /* General sections */
+  section { padding-left: 16px !important; padding-right: 16px !important; }
+  section > div { padding-left: 8px !important; padding-right: 8px !important; }
+  
+  /* Grids to single column */
+  [style*="grid-template-columns: repeat(3"], 
+  [style*="grid-template-columns:repeat(3"],
+  [style*="grid-template-columns: repeat(4"],
+  [style*="grid-template-columns:repeat(4"] {
+    grid-template-columns: 1fr !important;
+  }
+  [style*="grid-template-columns: repeat(2"],
+  [style*="grid-template-columns:repeat(2"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Flex rows to columns */
+  [style*="display:flex"][style*="gap:"] {
+    flex-direction: column !important;
+  }
+  
+  /* Typography scaling */
+  h1 { font-size: clamp(28px, 7vw, 48px) !important; }
+  h2 { font-size: clamp(22px, 5vw, 36px) !important; }
+  h3 { font-size: clamp(18px, 4vw, 24px) !important; }
+  p, li { font-size: 15px !important; line-height: 1.6 !important; }
+  
+  /* Section padding */
+  [style*="padding:80px"], [style*="padding: 80px"],
+  [style*="padding:100px"], [style*="padding: 100px"] {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  
+  /* Max-width containers */
+  [style*="max-width:1200px"], [style*="max-width: 1200px"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  
+  /* Footer grid */
+  footer [style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  /* Images */
+  img, [data-placeholder] {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Buttons */
+  a[style*="padding:14px"], a[style*="padding: 14px"],
+  button[style*="padding:14px"] {
+    padding: 12px 24px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) and (min-width: 769px) {
+  [style*="grid-template-columns: repeat(4"],
+  [style*="grid-template-columns:repeat(4"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  section { padding-left: 24px !important; padding-right: 24px !important; }
+}
+
+/* Sticky nav for export */
+nav[style*="position:sticky"] {
+  background: #0071e3 !important;
+}
+@media (max-width: 768px) {
+  nav[style*="position:sticky"] {
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    padding: 8px 12px !important;
+  }
+  nav[style*="position:sticky"] a {
+    font-size: 11px !important;
+    white-space: nowrap;
+  }
+  nav[style*="position:sticky"] span {
+    font-size: 12px !important;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+}
+</style>
+
 </head>
 <body>
 <nav style="background:#0071e3;padding:10px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;position:sticky;top:0;z-index:9999;font-family:sans-serif;"><span style="color:white;font-weight:700;font-size:14px;margin-right:16px;">Designmanufaktur</span><a href="index.html" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:13px;font-weight:400;">Startseite</a> <a href="startseite-v2.html" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:13px;font-weight:400;">Startseite V2</a> <a href="startseite-v3.html" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:13px;font-weight:400;">Startseite V3</a> <a href="ber-uns.html" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:13px;font-weight:400;">Über uns</a> <a href="startseite-v4.html" style="color:#fff;text-decoration:none;font-size:13px;font-weight:600;">Startseite V4</a> <a href="startseite-v5.html" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:13px;font-weight:400;">Startseite V5</a> <a href="startseite-v6.html" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:13px;font-weight:400;">Startseite V6</a> <a href="startseite-v7.html" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:13px;font-weight:400;">Startseite V7</a></nav>
